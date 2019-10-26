@@ -5,6 +5,11 @@ import java.util.List;
 
 /*
     102. 二叉树的层次遍历 迭代 queue
+    [
+      [3],
+      [9,20],
+      [15,7]
+    ]
  */
 public class Solution_102_2 {
     public List<List<Integer>> list = new ArrayList<List<Integer>>();

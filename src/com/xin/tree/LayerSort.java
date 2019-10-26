@@ -3,6 +3,9 @@ package com.xin.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 按层遍历输出
+ */
 public class LayerSort {
     public static void main(String[] args) {
         BinaryTreeNode binaryTreeNode = CreateTree.createTree(20);

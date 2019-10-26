@@ -4,6 +4,11 @@ import java.util.*;
 
 /*
     102. 二叉树的层次遍历 递归
+    [
+      [3],
+      [9,20],
+      [15,7]
+    ]
  */
 public class Solution_102_1 {
     public List<List<Integer>> list = new ArrayList<List<Integer>>();

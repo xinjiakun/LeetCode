@@ -2,13 +2,12 @@ package com.xin.tree;
 
 import java.util.*;
 
-/*
-    102. 二叉树的层次遍历 递归
-    [
-      [3],
-      [9,20],
-      [15,7]
-    ]
+/**
+ * @author 辛佳锟
+ * @title: levelOrderBottom_107
+ * @projectName LeetCode
+ * @description: 给定一个二叉树，返回其按层次遍历的节点值。 （即逐层地，从左到右访问所有节点）。解法1 递归
+ * @date 2019/10/26 17:12
  */
 public class Solution_102_1 {
     public List<List<Integer>> list = new ArrayList<List<Integer>>();

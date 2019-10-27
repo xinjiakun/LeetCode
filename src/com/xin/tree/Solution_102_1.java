@@ -1,5 +1,7 @@
 package com.xin.tree;
 
+import com.xin.tree.bean.TreeNode;
+
 import java.util.*;
 
 /**
@@ -32,11 +34,5 @@ public class Solution_102_1 {
         if(treeNode.right != null){
             helper(treeNode.right, level+1);
         }
-    }
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
     }
 }

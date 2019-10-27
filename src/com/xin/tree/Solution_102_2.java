@@ -1,5 +1,7 @@
 package com.xin.tree;
 
+import com.xin.tree.bean.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,10 +36,5 @@ public class Solution_102_2 {
             helper(treeNode.right, level+1);
         }
     }
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
+
 }

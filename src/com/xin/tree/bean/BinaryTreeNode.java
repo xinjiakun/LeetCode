@@ -1,4 +1,4 @@
-package com.xin.tree;
+package com.xin.tree.bean;
 
 import java.util.Objects;
 //二叉树节点

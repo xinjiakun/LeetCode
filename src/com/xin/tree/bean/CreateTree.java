@@ -1,6 +1,4 @@
-package com.xin.tree;
-
-import java.util.Iterator;
+package com.xin.tree.bean;
 
 //构建二叉树
 public class CreateTree {

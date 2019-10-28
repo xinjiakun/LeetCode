@@ -1,8 +1,14 @@
 package com.xin.tree;
 
+import com.xin.tree.bean.BinaryTreeNode;
+import com.xin.tree.bean.CreateTree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 按层遍历输出
+ */
 public class LayerSort {
     public static void main(String[] args) {
         BinaryTreeNode binaryTreeNode = CreateTree.createTree(20);
@@ -17,9 +23,10 @@ public class LayerSort {
         BinaryTreeNode node ;
         System.out.println(" ");
         System.out.println("=====================");
-        while (queue != null){
-            try {
-                node = queue.remove();
+        while (!queue.isEmpty()){
+
+                node = queue.element();
+                        queue.poll();
                 System.out.print(node.getNode()+" ");
                 if(node.getLeftNode() != null){
                     queue.add(node.getLeftNode());
@@ -27,9 +34,7 @@ public class LayerSort {
                 if(node.getRightNode() != null){
                     queue.add(node.getRightNode());
                 }
-            }catch (Exception e){
 
-            }
 
         }
     }

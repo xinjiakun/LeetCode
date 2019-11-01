@@ -14,18 +14,18 @@ public class MinPathSum {
 		int col = matric[0].length - 1;
 		int [][]dp = new int[row+1][col+1];
 		dp[row][col] = matric[row][col];
-		//���һ��
+		//最后一行
 		for(int i = col -1;i >= 0;i--) {
 			dp[row][i] = dp[row][i+1] + matric[row][i];
 		}
-		//���һ��
+		//最后一列
 		for(int i = row -1;i >= 0;i--) {
 			dp[i][col] = dp[i+1][col] + matric[i][col];
 		}
-		//��ͨ���
+		//普通情况
 		for(int i = row -1;i >= 0;i--) {
 			for(int n = col -1;n >= 0;n--) {
-				dp[i][n] = (dp[i+1][n] > dp[i][n+1] ? dp[i][n+1] : dp[i+1][n]) + matric[i][n]; 
+				dp[i][n] = (dp[i+1][n] > dp[i][n+1] ? dp[i][n+1] : dp[i+1][n]) + matric[i][n];
 			}
 		}
 		print(dp);

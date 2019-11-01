@@ -9,7 +9,13 @@ package com.xin.dp;
  */
 public class FindMaxSum {
 	public static int find(int[]array,int length) {
-		int sum = array[0];
+		if (length == 1) {
+			return array[0];
+		}//长度为1直接返回提高效率
+		if(length == 0){
+			return 0;
+		}//空数组直接返回
+		int sum = 0;//初始为0
 		int max = array[0];
 		for(int i = 0 ; i < length; i++) {
 			sum = getMax(sum+array[i], array[i]);

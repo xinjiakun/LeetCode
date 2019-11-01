@@ -1,13 +1,13 @@
 package com.xin.dp;
 /**
  * 
-    * @ClassName: FindMaxSum
+    * @ClassName: FindMaxSum_53
     * @Description: TODO 动态规划 连续子数组的最大和  	  sum[i] = max(sum[i-1] + a[i], a[i])
  *     * 												=>sum[i-1] > 0
     * @author xinjiakun
     *
  */
-public class FindMaxSum {
+public class FindMaxSum_53 {
 	public static int find(int[]array,int length) {
 		if (length == 1) {
 			return array[0];

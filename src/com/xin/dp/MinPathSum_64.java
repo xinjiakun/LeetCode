@@ -1,14 +1,14 @@
 package com.xin.dp;
 /**
  * 
-    * @ClassName: MinPathSum
+    * @ClassName: MinPathSum_64
     * @Description: TODO  给你一个二维数组，二维数组中的每个数都是正数，要求从左上
  * 							角走到右下角，每一步只能向右或者向下。沿途经过的数字要累
  * 							加起来。返回最小的路径和。
     * @author xinjiakun
     *
  */
-public class MinPathSum {
+public class MinPathSum_64 {
 	public static int dpMinPath(int[][]matric) {
 		int row = matric.length - 1;
 		int col = matric[0].length - 1;

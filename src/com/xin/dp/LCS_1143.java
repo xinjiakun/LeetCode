@@ -1,12 +1,12 @@
 package com.xin.dp;
 /**
  * 
-    * @ClassName: LCS
+    * @ClassName: LCS_1143
     * @Description: TODO    最长公共子序列
     * @author xinjiakun
     *
  */
-public class LCS {
+public class LCS_1143 {
 	public static void comSubstring(String left ,String right){
 			char[] str1 = left.toCharArray();
 			char[] str2 = right.toCharArray();

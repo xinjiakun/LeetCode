@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f492787-a341-40d3-85a5-25e39d2d68d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/Rob_198.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/Rob_213.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/Rob_337.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_121.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_122.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_123.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_188.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_309.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/MaxProfit_714.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/maxProfit/util" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_213.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xin/dp/MaxProfit_123.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xin/tree/bean/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xin/tree/bean/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_337.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_337.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,19 +35,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/Rob_198.java">
+        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_198.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="265">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/Rob_337.java">
+        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_213.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="552">
+              <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_337.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#561#562#0" expanded="true" />
@@ -80,15 +80,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
               <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xin/dp/Rob_213.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -143,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/com/xin/dp/longestValidParentheses_32.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/MinPathSum.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/uniquePaths_62.java" />
-        <option value="$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/LCS.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/LCS_1143.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/FindMaxSum.java" />
@@ -172,6 +162,10 @@
         <option value="$PROJECT_DIR$/src/com/xin/dp/Rob_213.java" />
         <option value="$PROJECT_DIR$/src/com/xin/tree/bean/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/com/xin/dp/Rob_337.java" />
+        <option value="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_337.java" />
+        <option value="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_198.java" />
+        <option value="$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java" />
+        <option value="$PROJECT_DIR$/src/com/xin/dp/rob/Rob_213.java" />
       </list>
     </option>
   </component>
@@ -231,7 +225,16 @@
               <item name="coding" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="xin" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
+              <item name="maxProfit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xin" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
+              <item name="rob" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="coding" type="b2602c69:ProjectViewProjectNode" />
@@ -360,12 +363,12 @@
       <workItem from="1572269606504" duration="5286000" />
       <workItem from="1572353614463" duration="167000" />
       <workItem from="1572527098033" duration="5113000" />
-      <workItem from="1572831847228" duration="33294000" />
+      <workItem from="1572831847228" duration="33851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75671000" />
+    <option name="totallyTimeSpent" value="76228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -630,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xin/dp/MinimumTotal_120.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -675,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/Rob_198.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xin/tree/Solution_102_1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -703,15 +692,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/Rob_337.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/MinPathSum_64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="1357">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_198.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_337.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#561#562#0" expanded="true" />
             <element signature="e#591#592#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xin/dp/rob/Rob_213.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
         </state>
       </provider>
     </entry>

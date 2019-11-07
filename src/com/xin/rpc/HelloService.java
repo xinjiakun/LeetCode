@@ -1,5 +1,5 @@
 package com.xin.rpc;
 
 public interface HelloService {
-    public void sayHi(String name);
+    public String sayHi(String name);
 }

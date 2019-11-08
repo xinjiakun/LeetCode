@@ -66,7 +66,6 @@ public class ServerCenter implements Server {
                         Method method = serviceClass.getMethod(methodName, parameter);
                         //反射调用方法  参数：对象  参数
                         Object result = method.invoke(serviceClass.newInstance(), arguments);
-
                         //向客户端将方法执行完毕的返回值传回客户端
                         outputStream = new ObjectOutputStream(socket.getOutputStream());
                         outputStream.writeObject(result);

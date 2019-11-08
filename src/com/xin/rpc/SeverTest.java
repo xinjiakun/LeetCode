@@ -26,5 +26,18 @@ public class SeverTest {
                 }
             }
         }).start();
+        //lambda表达式
+//        new Thread(() -> startServer()).start();
+    }
+    private static void startServer(){
+        //开启服务
+        Server server = new ServerCenter(9999);
+        //将HelloService注册到服务中心
+        server.register(HelloService.class, helloServiceImpl.class);
+        try {
+            server.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

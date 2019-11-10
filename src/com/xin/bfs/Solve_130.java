@@ -2,7 +2,7 @@ package com.xin.bfs;
 
 /**
  * @author 辛佳锟
- * @title: Solve
+ * @title: Solve_130
  * @projectName LeetCode
  * @description: 给定一个二维的矩阵，包含 'X' 和 'O'（字母 O）。
  * 找到所有被 'X' 围绕的区域，并将这些区域里所有的 'O' 用 'X' 填充。
@@ -10,7 +10,7 @@ package com.xin.bfs;
  *              边界上的 O 特殊处理，那么剩下的 O 替换成 X
  * @date 2019/11/9 22:13
  */
-public class Solve {
+public class Solve_130 {
     public void solve(char[][] board) {
         if (board.length == 0 || board == null) { //base case
             return;
@@ -51,7 +51,7 @@ public class Solve {
 
     public static void main(String[] args) {
         char[][] chars = {{'X', 'X', 'X', 'X'}, {'X', 'O', 'O', 'X'}, {'X', 'X', 'O', 'X'}, {'X', 'O', 'X', 'X'}};
-        new Solve().solve(chars);
+        new Solve_130().solve(chars);
         for (char[] a : chars) {
             for (char b : a) {
                 System.out.println(a);

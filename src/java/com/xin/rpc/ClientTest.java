@@ -12,7 +12,7 @@ import java.net.InetSocketAddress;
 public class ClientTest {
     public static void main(String[] args) {
         try {
-            HelloService service = Client.getRemoteProxyObj(Class.forName("com.xin.rpc.HelloService"),
+            com.xin.rpc.HelloService service = com.xin.rpc.Client.getRemoteProxyObj(Class.forName("com.xin.rpc.HelloService"),
                     new InetSocketAddress("127.0.0.1", 9999));
             System.out.println(service.sayHi("xinjiakun"));
         } catch (ClassNotFoundException e) {

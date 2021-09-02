@@ -1,5 +1,7 @@
 package com.xin.list;
 
+import java.util.Arrays;
+
 /**
  * @Classname Solution_881
  * @Description 救生艇
@@ -39,7 +41,8 @@ public class Solution_881 {
     }
 
     public int numRescueBoats(int[] people, int limit) {
-        quickSort(people, 0, people.length - 1);
+        Arrays.sort(people);
+//        quickSort(people, 0, people.length - 1);
         int num = 0;
         int start = 0;
         for (int i = people.length - 1; i >= start && start <= people.length; i--) {

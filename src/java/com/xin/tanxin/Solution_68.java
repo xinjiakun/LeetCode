@@ -17,7 +17,7 @@ public class Solution_68 {
         int num = 0;
         List<String> end = new ArrayList<>();
         for (int i=0;i<words.length;i++){
-            if (num<=maxWidth && i<words.length-1){
+            if (num+words[i].length()<=maxWidth-i+a+1 && i<words.length-1){
                 num+=words[i].length();
             }else {
                 int b= (maxWidth-num)/i-a;
@@ -25,22 +25,22 @@ public class Solution_68 {
                 String aaa ="";
                 if (i-a==1 || i==words.length-1){
                     for (int k=a;k<i;k++){
-                        aaa.split(words[k]);
-                        aaa.split(space);
+                        aaa = aaa.concat(words[k]);
+                        aaa = aaa.concat(space);
                     }
                 }
                 for (int k=a;k<i;k++){
-                    aaa.split(words[k]);
+                    aaa = aaa.concat(words[k]);
                     for (int q=0;q<b;q++){
-                        aaa.split(space);
+                        aaa = aaa.concat(space);
                     }
                     if (k<a+c){
-                        aaa.split(space);
+                        aaa = aaa.concat(space);
                     }
                 }
                 if (aaa.length()<maxWidth){
                     for (int i1=aaa.length();i1<=maxWidth;i1++){
-                        aaa.split(space);
+                        aaa = aaa.concat(space);
                     }
                 }
                 end.add(aaa);

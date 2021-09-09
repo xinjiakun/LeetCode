@@ -22,7 +22,7 @@ public class Solution_502 {
         Arrays.sort(a, (a1, a2) -> a1[0] - a2[0]);
         PriorityQueue<Integer> pq = new PriorityQueue<>((x, y) -> y - x);
         for (int i = 0; i < k; i++) {
-            for (; b < n && a[b][0] < w; b++) {
+            for (; b < n && a[b][0] <= w; b++) {
                 pq.add(a[b][1]);
             }
             if (pq.isEmpty()) {
@@ -32,5 +32,9 @@ public class Solution_502 {
             }
         }
         return w;
+    }
+
+    public static void main(String[] args) {
+        new Solution_502().findMaximizedCapital(2,0,new int[]{1,2,3},new int[]{0,1,1});
     }
 }

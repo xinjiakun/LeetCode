@@ -12,45 +12,70 @@ import java.util.List;
  */
 public class Solution_68 {
     public List<String> fullJustify(String[] words, int maxWidth) {
-        String space=" ";
-        int a= 0;
-        int num = 0;
+        String space = " ";
+        int stringNum = 0;//单词数
+        int charNum = 0;//字符数
+        int startIndex = 0;
         List<String> end = new ArrayList<>();
-        for (int i=0;i<words.length;i++){
-            if (num+words[i].length()<=maxWidth-i+a+1 && i<words.length-1){
-                num+=words[i].length();
-            }else {
-                int b= (maxWidth-num)/i-a;
-                int c= (maxWidth-num)%i-a;
-                String aaa ="";
-                if (i-a==1 || i==words.length-1){
-                    for (int k=a;k<i;k++){
+        for (int i = 0; i < words.length; i++) {
+            if (charNum + words[i].length() + stringNum  <= maxWidth) {//添加单词未超过最大长度
+                charNum += words[i].length();
+                stringNum++;
+                if (i == words.length - 1) {//最后一位添加后还未达最大长度
+                    String aaa = "";
+                    for (int k = startIndex; k <= i; k++) {//单词拼接
                         aaa = aaa.concat(words[k]);
-                        aaa = aaa.concat(space);
+                        if (k!=i) {
+                            aaa = aaa.concat(space);
+                        }
+                    }
+                    if (aaa.length() < maxWidth) {//行末尾补充空格
+                        for (int i1 = aaa.length(); i1 < maxWidth; i1++) {
+                            aaa = aaa.concat(space);
+                        }
+                    }
+                    end.add(aaa);
+                }
+            } else {
+
+                int b = stringNum > 1 ? (maxWidth - charNum) / (stringNum - 1) : 0;
+                int c = stringNum > 1 ? (maxWidth - charNum) % (stringNum - 1) : 0;
+                String aaa = "";
+                if (stringNum == 1) {//本行为一个单词
+                    for (int k = startIndex; k < i; k++) {
+                        aaa = aaa.concat(words[k]);
+                    }
+                } else {
+                    for (int k = startIndex; k < i; k++) {//单词拼接
+                        aaa = aaa.concat(words[k]);
+                        if (k != i - 1) {
+                            for (int q = 0; q < b; q++) {
+                                aaa = aaa.concat(space);
+                            }
+                            if (k < startIndex + c) {
+                                aaa = aaa.concat(space);
+                            }
+                        }
                     }
                 }
-                for (int k=a;k<i;k++){
-                    aaa = aaa.concat(words[k]);
-                    for (int q=0;q<b;q++){
-                        aaa = aaa.concat(space);
-                    }
-                    if (k<a+c){
-                        aaa = aaa.concat(space);
-                    }
-                }
-                if (aaa.length()<maxWidth){
-                    for (int i1=aaa.length();i1<=maxWidth;i1++){
+                if (aaa.length() < maxWidth) {//行末尾补充空格
+                    for (int i1 = aaa.length(); i1 < maxWidth; i1++) {
                         aaa = aaa.concat(space);
                     }
                 }
                 end.add(aaa);
+                stringNum = 0;
+                charNum = 0;//字符数
+                startIndex = i;
+                i--;
             }
         }
         return end;
     }
 
     public static void main(String[] args) {
-        String[]d = new String[]{"This", "is", "an", "example", "of", "text", "justification."};
-        new Solution_68().fullJustify(d,16);
+        String[] d = new String[]{"Listen","to","many,","speak","to","a","few."
+        };
+        System.out.println(new Solution_68().fullJustify(d, 6));
     }
 }

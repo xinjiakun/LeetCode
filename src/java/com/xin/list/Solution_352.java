@@ -58,7 +58,7 @@ public class Solution_352 {
                         break;
                     }
                 } else if (i == list.size() - 1) {
-                    if (i > 0 && val - 1 == list.get(i).end) {
+                    if (val - 1 == list.get(i).end) {
                         list.get(i).end = val;
                         break;
                     }
@@ -82,6 +82,10 @@ public class Solution_352 {
 
     public static void main(String[] args) {
         Solution_352 solution_352 = new Solution_352();
+        for (int i = 1; i < 2001; i++) {
+            solution_352.addNum(i);
+
+        }
         solution_352.addNum(1);
         solution_352.getIntervals();
         solution_352.addNum(3);

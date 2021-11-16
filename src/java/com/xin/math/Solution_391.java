@@ -45,26 +45,25 @@ public class Solution_391 {
                 b2[1] = b;
             }
         }
-        if (a1[0] == a2[1] && b1[0] == b2[0] && a1[1] == b1[1] && a2[1] == b2[1]) {
-            for (String aa : map.keySet()) {
-                if (aa.equals(a1[0] + "" + a1[1]) || aa.equals(a2[0] + "" + a2[1]) || aa.equals(b1[0] + "" + b1[1]) || aa.equals(b2[0] + "" + b2[1])) {
-                    if (map.get(aa) != 1) {
-                        return false;
-                    }
-                } else {
-                    if (map.get(aa) % 2 != 0) {
-                        return false;
-                    }
+
+        for (String aa : map.keySet()) {
+            if (aa.equals(a1[0] + "" + a1[1]) || aa.equals(a2[0] + "" + a2[1]) || aa.equals(b1[0] + "" + b1[1]) || aa.equals(b2[0] + "" + b2[1])) {
+                if (map.get(aa) != 1) {
+                    return false;
+                }
+            } else {
+                if (map.get(aa) % 2 != 0) {
+                    return false;
                 }
             }
-            return (a1[1] - a2[1]) * (b1[0] - a1[0]) == x;
         }
+        return (a1[1] - a2[1]) * (b1[0] - a1[0]) == x;
 
-        return false;
+
     }
 
     public static void main(String[] args) {
-        int[][] a = {{0, 0, 2, 2}, {1, 1, 3, 3}, {2, 0, 3, 1}, {0, 3, 3, 4}};
+        int[][] a = {{0, -1, 1, 0}, {0, 0, 1, 1}, {0, 1, 1, 2}, {0, 2, 1, 3}};
         new Solution_391().isRectangleCover(a);
     }
 }
